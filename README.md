@@ -68,6 +68,50 @@ This score is used in:
 -  Performance Scoring  
 -  Role Fit Recommendation (TBU)
 
+
+
+A. Structured (Transformer Branch)
+Feature	Description
+base_salary	Current salary
+num_raise_requests	Raise requests submitted
+num_appraisals	Evaluations received
+num_benefits	Assigned benefits
+num_penalties	Penalties on record
+past_performance_score	Output from performance model
+skills	Number of verified skills
+cost_of_training	Financial cost of training
+has_training	Whether training exists (bool)
+attrition_risk	Predicted risk score (0–3)
+age, marital_status	Demographic features (one-hot encoded)
+table 6.5.4: Feature List for Model S2 (Transformer Branch)
+
+🔹 B. Simulated Behavior Metrics
+Feature	Description
+hours_present_per_day, workstation_time	Time tracking
+meetings_attended, break_time	Engagement indicators
+stress_level	Derived from attrition and penalties
+movement_type, sitting_posture	Workplace behavior patterns
+total_num_of_interactions	Comment count, feedback frequency
+num_conflicts_involved	Disciplinary records
+collaboration_score	Computed from task completion & group work
+negative_body_language_signal_score	Simulated metric
+positive_body_language_signal_score	Simulated metric
+table 6.5.5.1: Feature List for Model S2 (LSTM Branch)
+
+
+
+🔹 C. Textual (LSTM Branch)
+Input	Description
+comments	Free-form employee-written text (collected from the platform)
+table 6.5.5.2: Feature List for Model S2 (LSTM Branch) Continued
+
+1. Output Format:
+{
+  "sentiment_score": 3
+}
+•	Integer between 0 and 4 indicating overall sentiment class
+
+
 ---
 
 ##  Roadmap
