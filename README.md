@@ -85,7 +85,7 @@ has_training	Whether training exists (bool)
 attrition_risk	Predicted risk score (0–3)
 age, marital_status	Demographic features (one-hot encoded)
 
-🔹 B. Simulated Behavior Metrics
+B. Simulated Behavior Metrics
 hours_present_per_day, workstation_time	Time tracking
 meetings_attended, break_time	Engagement indicators
 stress_level	Derived from attrition and penalties
@@ -98,15 +98,8 @@ positive_body_language_signal_score	Simulated metric
 
 
 
-🔹 C. Textual (LSTM Branch)
+ C. Textual (LSTM Branch)
 comments Free-form employee-written text (collected from the platform)
-
-1. Output Format:
-{
-  "sentiment_score": 3
-}
-•	Integer between 0 and 4 indicating overall sentiment class
-
 
 ---
 
