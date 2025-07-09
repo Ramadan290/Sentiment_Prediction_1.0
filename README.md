@@ -70,8 +70,9 @@ This score is used in:
 
 
 
+## FEATURES
+
 A. Structured (Transformer Branch)
-Feature	Description
 base_salary	Current salary
 num_raise_requests	Raise requests submitted
 num_appraisals	Evaluations received
@@ -83,10 +84,8 @@ cost_of_training	Financial cost of training
 has_training	Whether training exists (bool)
 attrition_risk	Predicted risk score (0–3)
 age, marital_status	Demographic features (one-hot encoded)
-table 6.5.4: Feature List for Model S2 (Transformer Branch)
 
 🔹 B. Simulated Behavior Metrics
-Feature	Description
 hours_present_per_day, workstation_time	Time tracking
 meetings_attended, break_time	Engagement indicators
 stress_level	Derived from attrition and penalties
@@ -96,14 +95,11 @@ num_conflicts_involved	Disciplinary records
 collaboration_score	Computed from task completion & group work
 negative_body_language_signal_score	Simulated metric
 positive_body_language_signal_score	Simulated metric
-table 6.5.5.1: Feature List for Model S2 (LSTM Branch)
 
 
 
 🔹 C. Textual (LSTM Branch)
-Input	Description
-comments	Free-form employee-written text (collected from the platform)
-table 6.5.5.2: Feature List for Model S2 (LSTM Branch) Continued
+comments Free-form employee-written text (collected from the platform)
 
 1. Output Format:
 {
