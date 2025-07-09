@@ -64,13 +64,13 @@ The model outputs a single value:
 - `4`: Extremely Positive
 
 This score is used in:
-- 🔍 Attrition Risk Prediction  
-- 📈 Performance Scoring  
-- 🔄 Role Fit Recommendation (TBU)
+-  Attrition Risk Prediction  
+-  Performance Scoring  
+-  Role Fit Recommendation (TBU)
 
 ---
 
-## 🛤️ Roadmap
+##  Roadmap
 
 > **Sentiment Analysis 2.0** will introduce:
 - Real-time live action image input
@@ -79,7 +79,7 @@ This score is used in:
 
 ---
 
-## 📌 Credits
+##  Credits
 
 Developed by **ME** as part of the **Themis AI Engine**, fusing behavioral intelligence with emotion-aware prediction to drive smarter HR decisions.
 
